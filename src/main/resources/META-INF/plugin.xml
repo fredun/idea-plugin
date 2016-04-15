@@ -1,0 +1,38 @@
+<idea-plugin version="2">
+	<id>com.fredun.idea</id>
+	<name>Fredun language plugin</name>
+	<version>0.0.1</version>
+	<vendor email="arcnorj@gmail.com" url="https://github.com/fredun/idea-plugin"/>
+
+	<description><![CDATA[
+  <p>Fredun language plugin</p>
+
+<p>
+<a href="https://github.com/fredun/idea-plugin">Github source</a>
+  ]]></description>
+
+	<change-notes><![CDATA[
+        ]]>
+	</change-notes>
+
+	<!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+	<idea-version since-build="145"/> <!-- requires 13.x, 14.x, 15.x -->
+
+	<!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+		 on how to target different products -->
+	<!-- uncomment to enable plugin in all products -->
+	<depends>com.intellij.modules.lang</depends>
+
+	<application-components>
+	</application-components>
+
+	<project-components>
+	</project-components>
+
+	<actions>
+	</actions>
+
+	<extensions defaultExtensionNs="com.intellij">
+		<fileTypeFactory implementation="com.fredun.idea.FredunFileTypeFactory"/>
+	</extensions>
+</idea-plugin>
