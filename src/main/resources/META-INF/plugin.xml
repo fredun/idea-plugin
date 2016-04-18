@@ -34,5 +34,6 @@
 
 	<extensions defaultExtensionNs="com.intellij">
 		<fileTypeFactory implementation="com.fredun.idea.FredunFileTypeFactory"/>
+		<lang.parserDefinition language="Fredun" implementationClass="com.fredun.idea.FredunParserDefinition"/>
 	</extensions>
 </idea-plugin>
